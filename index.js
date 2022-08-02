@@ -1,13 +1,10 @@
-var nome = "Paulo" //Digite o nome que queira entre aspas
+var nome = "joao" //Digite o nome que queira entre aspas
 let resultado = nome.split("");
 let tamanho = resultado.length
-var i=Number(tamanho)
-let novonome= ['']
-var y;
+var i=Number(tamanho)-1
+let novonome= resultado[i]
 while(i>0){
-    novonome[y] =resultado[i-1]
-    console.log(novonome[y])
+    novonome=novonome+resultado[i-1]
     i=i-1
-    y=y+1
 }
-
+console.log(novonome)
